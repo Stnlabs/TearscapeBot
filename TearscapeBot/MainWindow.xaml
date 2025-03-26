@@ -1,0 +1,38 @@
+﻿<Window x:Class="TearscapeBot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TearscapeBot"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="Buttonsetting" TargetType="Button">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="10" Margin="0,0,65,24">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Button Content="Send" Margin="615,361,25,34" Click="BTNSend"/>
+        <Button x:Name="BTN_Connect" Content="Connect" HorizontalAlignment="Left" Margin="565,57,0,0" VerticalAlignment="Top" Height="45" Width="160" Click="BTNConnect"/>
+        <TextBox x:Name="TXTBMessageWindow" IsReadOnly="True" Text="" Margin="25,11,240,130" VerticalScrollBarVisibility="Auto" TextChanged="Chatwindow"/>
+        <TextBox x:Name="TXTBSend" TextWrapping="Wrap" Text="" Margin="25,361,240,34"/>
+        <Button Content="" Style="{StaticResource Buttonsetting}" HorizontalAlignment="Left" Margin="745,16,0,0" VerticalAlignment="Top" Height="43" Width="90" Click="BTNSettings"/>
+        <Label Content="Connection settings" HorizontalAlignment="Left" Margin="615,10,0,0" VerticalAlignment="Top" Height="42" Width="125"/>
+    </Grid>
+</Window>

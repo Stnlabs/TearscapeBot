@@ -1,0 +1,14 @@
+﻿<Window x:Class="TearscapeBot.Welcome_Module.Welcome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TearscapeBot.Welcome_Module"
+        mc:Ignorable="d"
+        Title="Welcome" Height="450" Width="800">
+    <Grid>
+        <Label Content="Welcome - Introdouction" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Height="44" Width="310" FontSize="24" FontWeight="Bold"/>
+        <TextBox TextWrapping="Wrap" Text="A short introduction, to use this chatbot make sure to have a secound Twitch Account, a registered application for twitch developer, the channelname where you want to use it and the generated authtoken for your twitch username. I know it sounds complicated, but this here will guide you threw the process." Margin="25,64,165,48" x:Name="TXBIntroduction" FontSize="30" FontStyle="Italic"/>
+        <Button Content="Tostep1" HorizontalAlignment="Left" Margin="535,364,0,0" VerticalAlignment="Top" Height="45" Width="170" FontSize="25" FontWeight="Bold" Click="Button_Click"/>
+    </Grid>
+</Window>

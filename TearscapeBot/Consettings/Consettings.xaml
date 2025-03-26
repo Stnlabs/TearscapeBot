@@ -1,0 +1,22 @@
+﻿<Window x:Class="TearscapeBot.Consettings.Consettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TearscapeBot.Consettings"
+        mc:Ignorable="d"
+        Title="Consettings" Height="450" Width="800">
+    <Grid>
+        <Label Content="Settings" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="160" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="Label1" Content="Username" HorizontalAlignment="Left" Margin="12,66,0,0" VerticalAlignment="Top" Width="106"/>
+        <Label x:Name="Label2"  Content="authtoken" HorizontalAlignment="Left" Margin="13,109,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label x:Name="Label3"  Content="channel" HorizontalAlignment="Left" Margin="13,152,0,0" VerticalAlignment="Top" Width="105"/>
+        <TextBox x:Name="user" HorizontalAlignment="Left" Margin="135,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="440" Height="27" TextChanged="User"/>
+        <TextBox x:Name="authtoken"  HorizontalAlignment="Left" Margin="135,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="440" Height="27" TextChanged="Channel"/>
+        <TextBox x:Name ="CNL"  HorizontalAlignment="Left" Margin="135,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="440" Height="27" TextChanged="Client_ID"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,271,0,0" TextWrapping="Wrap" Text="Note: Make sure to know what you are doing if you change your settings. Corrupt information can lead to connection problems." VerticalAlignment="Top" Height="88" Width="559" FontSize="20"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="515,364,0,0" VerticalAlignment="Top" Height="35" Width="95" FontSize="20" Click="Reset"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="655,364,0,0" VerticalAlignment="Top" Height="35" Width="105" FontSize="20" Click="Save"/>
+        <Label x:Name="Alert" Content="" HorizontalAlignment="Left" Margin="135,217,0,0" VerticalAlignment="Top" Width="440" FontSize="20"/>
+    </Grid>
+</Window>
